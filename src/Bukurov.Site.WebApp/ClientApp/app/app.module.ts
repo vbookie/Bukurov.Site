@@ -4,7 +4,6 @@ import { UniversalModule } from 'angular2-universal';
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { ArticleListComponent } from './components/articles/article-list.component'
 
@@ -14,7 +13,6 @@ import { ArticleListComponent } from './components/articles/article-list.compone
         AppComponent,
         NavMenuComponent,
         CounterComponent,
-        FetchDataComponent,
         HomeComponent,
         ArticleListComponent
     ],
@@ -24,7 +22,6 @@ import { ArticleListComponent } from './components/articles/article-list.compone
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
             { path: 'articles', component: ArticleListComponent },
             { path: '**', redirectTo: 'home' }
         ])
