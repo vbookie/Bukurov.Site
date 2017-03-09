@@ -6,17 +6,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bukurov.Site.WebApp.Controllers
 {
-    [Route("api/[controller]")]
-    public class BlogController : Controller
+    [Route("api/articles")]
+    public class ArticleController : Controller
     {
         private readonly InMemoryDataSource dataSource;
 
-        public BlogController(InMemoryDataSource dataSource)
+        public ArticleController(InMemoryDataSource dataSource)
         {
             this.dataSource = dataSource;
         }
 
-        [HttpGet("[action]")]
+        [HttpGet]
         [AllowAnonymous]
         public IEnumerable<Article> GetArticles()
         {

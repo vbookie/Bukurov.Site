@@ -9,7 +9,7 @@ export class ArticleListComponent {
     public articles: ArticleModel[];
 
     constructor(http: Http) {
-        http.get('/api/Blog/GetArticles').subscribe(result => {
+        http.get('/api/articles').subscribe(result => {
             this.articles = result.json() as ArticleModel[];
         });
     }
