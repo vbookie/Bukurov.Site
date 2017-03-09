@@ -10,6 +10,7 @@
     <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.0" />
+    <ProjectReference Include="../Bukurov.Site.Data/Bukurov.Site.Data.csproj" />
   </ItemGroup>
   <ItemGroup>
     <!-- Files not to show in IDE -->
