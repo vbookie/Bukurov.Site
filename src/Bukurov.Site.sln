@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BukurovSiteWebapp", "Bukurov.Site.WebApp\BukurovSiteWebapp.csproj", "{86CB26EF-ABEF-4260-ADE2-3921B9F5DA77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bukurov.Site.WebApp", "Bukurov.Site.WebApp\Bukurov.Site.WebApp.csproj", "{86CB26EF-ABEF-4260-ADE2-3921B9F5DA77}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bukurov.Site.Data", "Bukurov.Site.Data\Bukurov.Site.Data.csproj", "{C93F4554-8D9F-4EC4-8095-8BCEED030790}"
 EndProject
