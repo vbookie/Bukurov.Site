@@ -3,6 +3,8 @@ using Bukurov.Site.Data;
 using Bukurov.Site.Data.Blogs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Linq;
 
 namespace Bukurov.Site.WebApp.Controllers
 {
@@ -22,6 +24,14 @@ namespace Bukurov.Site.WebApp.Controllers
         {
             var articles = dataSource.Articles;
             return articles;
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public Article GetArticle(Guid id)
+        {
+            var article = dataSource.Articles.First(a => a.Id == id);
+            return article;
         }
     }
 }

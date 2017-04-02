@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
-import { ArticleViewModel } from './article-view-models'
+import { ArticleViewModel } from './article-view-models';
+import { ArticleService } from './../../services/article.service';
 
 @Component({
     selector: 'article-list',
     templateUrl: 'article-list.component.html'
 })
-export class ArticleListComponent {
+export class ArticleListComponent implements OnInit {
+    
     public articles: ArticleViewModel[];
 
-    constructor(http: Http) {
+    private _service: ArticleService;
+
+    constructor(service: ArticleService) {
+        this._service = service;
+    }
+
+    ngOnInit() {
         http.get('/api/articles').subscribe(result => {
             this.articles = result.json() as ArticleViewModel[];
         });
